@@ -7,6 +7,7 @@ RELEASE="$(rpm -E %fedora)"
 
 ### Install packages
 rpm-ostree install \
+    bpytop \
     byobu \
     cowsay \
     goverlay \
@@ -14,7 +15,6 @@ rpm-ostree install \
     kitty \
     mangohud \
     neovim \
-    netdata \
     powertop \
     tlp
 
