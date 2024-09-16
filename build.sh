@@ -7,7 +7,6 @@ RELEASE="$(rpm -E %fedora)"
 
 ### Install packages
 rpm-ostree install \
-    bpytop \
     byobu \
     cowsay \
     goverlay \
@@ -16,7 +15,8 @@ rpm-ostree install \
     mangohud \
     neovim \
     netdata \
-    powertop
+    powertop \
+    tlp
 
 ### Manage additional services
 systemctl disable podman.socket
