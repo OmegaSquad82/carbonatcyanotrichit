@@ -16,10 +16,9 @@ rpm-ostree install \
     mangohud \
     neovim \
     netdata \
-    powertop \
-    tlp
+    powertop
 
-### Enable additional services
-systemctl enable podman.socket
+### Manage additional services
+systemctl disable podman.socket
 systemctl enable sshd.service
 systemctl disable tailscaled.service
